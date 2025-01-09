@@ -9,8 +9,8 @@ require('dotenv').config();
 const app = express();
 connectDB();
 
-app.get('/hello',(req,res)=>{
-    res.send('Hello Joseph');
+app.get('/',(req,res)=>{
+    res.send('Hello imbécile Joseph');
  });
 app.use(express.json());
 app.use('/api/auth', authRoutes);
@@ -19,5 +19,5 @@ app.use('/api/watchlist', watchlistRoutes);
 
 const PORT = process.env.PORT || 9304;
 app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+    console.log(`Server running on port ${PORT} imbécile`);
 });
