@@ -10,7 +10,7 @@ const app = express();
 connectDB();
 
 app.get('/',(req,res)=>{
-    res.send('Hello imbécile Joseph');
+    res.send('Hello Joseph');
  });
 app.use(express.json());
 app.use('/api/auth', authRoutes);
@@ -19,5 +19,5 @@ app.use('/api/watchlist', watchlistRoutes);
 
 const PORT = process.env.PORT || 9304;
 app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT} imbécile`);
+    console.log(`Server running on port ${PORT}`);
 });
